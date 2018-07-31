@@ -1,3 +1,7 @@
+
+Adding step by step 
+-------------------
+
 STEP 1 - Adding below dependencies (to embed tomcat)
 
 		<dependency>
