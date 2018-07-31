@@ -1,0 +1,39 @@
+Step by Step guide
+------------------
+
+STEP 1 - Adding Below dependencies
+
+		<!-- For adding Spring MVC support -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>4.3.9.RELEASE</version>
+		</dependency>
+
+		<!-- JSTL -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>${jstl.version}</version>
+		</dependency>
+
+		<!-- for compile only we need to have this entry -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>${servletapi.version}</version>
+			<scope>provided</scope>
+		</dependency>
+
+STEP 2 - Configuring view resolvers, annotation activation support & component scanning in "spring-servlet.xml"
+
+STEP 3 - Configuring web.xml which has the dispatcher servlet entries, which will intercept all the requests.
+		We also need to add "contextConfigLocation" entry which will contain the xml file name which are going to use to 
+		configure spring related beans/view resolvers 
+		
+STEP 4 - How to execute?
+
+Just run the application and it will be directed to below URL. Anyways in the web.xml it is mentioned that starting page
+should be index.jsp
+
+http://localhost:8080/BasicSpringMVCApp/		
